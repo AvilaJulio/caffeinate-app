@@ -30,6 +30,17 @@ controller.toggle()
 check(!controller.isOn, "toggle() from on turns off")
 check(!processHoldsDisplayAssertion(), "toggle() off releases the assertion")
 
+print("StatusItemController")
+
+check(StatusItemController.symbolName(isOn: true) == "cup.and.saucer.fill",
+      "on state uses the filled cup")
+check(StatusItemController.symbolName(isOn: false) == "cup.and.saucer",
+      "off state uses the outline cup")
+check(StatusItemController.stateTitle(isOn: true) == "Keeping display awake",
+      "on state title")
+check(StatusItemController.stateTitle(isOn: false) == "Display sleeps normally",
+      "off state title")
+
 if failureCount > 0 {
     print("\n\(failureCount) failure(s)")
     exit(1)

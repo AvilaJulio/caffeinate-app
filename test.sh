@@ -8,6 +8,7 @@ mkdir -p build/tests
 # collide with Tests/main.swift.
 swiftc -g \
   Sources/AwakeController.swift \
+  Sources/StatusItemController.swift \
   Tests/TestSupport.swift \
   Tests/main.swift \
   -o build/tests/CaffeinateTests
