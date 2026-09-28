@@ -2,6 +2,8 @@
 
 A macOS menu bar app that keeps the display awake. Coffee cup icon, one click.
 
+![Caffeinate's coffee cup in the macOS menu bar](docs/menubar.png)
+
 - **Left-click** the cup to toggle. Outline = display sleeps normally, filled = staying awake.
 - **Right-click** for the current state and Quit.
 
